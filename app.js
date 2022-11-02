@@ -17,11 +17,12 @@ let user = [
 ];
 
 app.get('/', (req, res) => {
-    res.send({message:'LOOKING GOOD'})
+    // res.send({message:'LOOKING GOOD'})
+    res.json(user)
 });
 
 app.get('/user',(req, res) => {
-    res.json(user)
+    
 });
 
 app.listen(PORT, () => console.log("App server is currently running on port " + PORT));
